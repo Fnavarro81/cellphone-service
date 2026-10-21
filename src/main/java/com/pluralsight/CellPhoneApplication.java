@@ -22,10 +22,14 @@ public class CellPhoneApplication {
         cellPhone2.setPhoneNUmber("312-555-5555");
         cellPhone2.setOwner("Raul");
 
+        CellPhone cellPhone3 = new CellPhone(1001, "Zen 2", "AT&T", "766-801-2425", "Paul");
+
         display(cellPhone1);
         display(cellPhone2);
+        display(cellPhone3);
 
         cellPhone1.dial(cellPhone2.getPhoneNUmber());
         cellPhone2.dial(cellPhone1.getPhoneNUmber());
+        cellPhone1.dial(cellPhone3.getPhoneNUmber());
     }
 }
